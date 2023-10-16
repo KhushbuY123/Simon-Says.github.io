@@ -86,7 +86,7 @@ function checkAns(idx){
 }
 //...........game over//.........................
 function sound(){
-    let mySound = new Audio('img/over.mp3');
+    let mySound = new Audio('img/UC3CKCR-game-over-a.mp3');
     mySound.play()
 }
 //...................button press...................

@@ -1,0 +1,105 @@
+* {
+    font-family: cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #000;
+    margin-top: 1rem;
+}
+
+/* Score section */
+.score {
+    background-color: plum;
+    width: 70%;
+    max-width: 400px;
+    border-radius: 1.5rem;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+#highest-score {
+    font-size: 1rem;
+    color: rgb(97, 30, 97);
+}
+
+/* Game container */
+.container {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+/* Buttons */
+.btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 15%;
+    margin: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: rgb(254, 130, 130);
+    border: 2px solid rgb(206, 49, 49);
+}
+
+.yellow {
+    background-color: rgb(148, 148, 246);
+    border: 2px solid blue;
+}
+
+.green {
+    background-color: rgb(98, 241, 181);
+    border: 2px solid rgb(41, 97, 116);
+}
+
+.blue {
+    background-color: rgb(208, 146, 190);
+    border: 2px solid rgb(158, 27, 97);
+}
+
+/* Flashing effect */
+.flash {
+    background: rgb(236, 232, 241);
+}
+
+.userflash {
+    background-color: rgb(88, 41, 197);
+}
+
+/* Start and Restart buttons */
+.start,
+.restart {
+    margin-top: 1rem;
+    background-color: rgb(77, 72, 72);
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+}
+
+/* Responsive media queries */
+@media (max-width: 500px) {
+    .container {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .btn {
+        width: 80px;
+        height: 100px;
+        border-radius: 15%;
+        margin: 0.5rem;
+    }
+}
+

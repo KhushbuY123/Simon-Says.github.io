@@ -1,0 +1,118 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: #000;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.main {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #000;
+    color: #000;
+}
+
+/* Heading styles */
+.heading {
+    margin-top: 1rem;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1rem;
+    border: 2px solid plum;
+    background-color: plum;
+    border-radius: 1rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+/* Rule section */
+.rule-section {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+}
+
+ul.rule {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5rem 0;
+    border-bottom: 1px solid rgb(183, 188, 183);
+    color: rgb(208, 195, 220);
+    font-family: cursive;
+    font-weight: 500;
+    padding-left: 1rem;
+    position: relative;
+}
+
+li::before {
+    content: '📓';
+    position: absolute;
+    left: -1rem;
+}
+
+/* Play button */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: rgb(232, 164, 232);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: none;
+    color: rgb(78, 75, 75);
+    font-weight: 900;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+    .main {
+        padding: 0.5rem;
+        background: #000;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .rule-section {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        padding: 0.5rem;
+        border-radius: 0;
+        background: #000;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        padding: 0.3rem;
+    }
+
+    .rule-section {
+        font-size: 1rem;
+    }
+}

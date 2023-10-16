@@ -74,6 +74,7 @@ function checkAns(idx){
             h3.innerHTML=`Game over! Your score is <b>${(level-1)*5}</b><br>Press Start and Play the GAME!`;
         }
         document.querySelector("body").style.backgroundColor = "#DC143C";
+        sound();
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor="black";
         },250);
@@ -83,7 +84,11 @@ function checkAns(idx){
         
     }
 }
-
+//...........game over//.........................
+function sound(){
+    let mySound = new Audio('img/over.mp3');
+    mySound.play()
+}
 //...................button press...................
 function btnpress(idx){
     let btn=this;

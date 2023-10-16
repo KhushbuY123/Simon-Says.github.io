@@ -77,7 +77,7 @@ function checkAns(idx){
         sound();
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor="black";
-        },250);
+        },1000);
         reset();
         updatehighestscore();//.....
         
